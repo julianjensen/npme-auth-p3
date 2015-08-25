@@ -1,14 +1,17 @@
-
-
 var fs = require( 'fs' ),
-    ufile = '/etc/npme/service.json',
+    ufile = '/etc/npme/users.json',
     us = fs.statSync( ufile ),
-    users = require( ufile );
+    users = require( ufile ),
 
+    logfile = fs.createWriteStream( './auth.log' );
+
+console.log( "users:", users );
 function P3Authenticator() {}
 
 P3Authenticator.prototype.authenticate = function( creds, cb ) {
 
+
+	logfile.write( "creds: " + JSON.stringify( creds ) );
     var lus = fs.statSync( ufile );
 
     if ( lus.ctime > us.ctime )

@@ -1,6 +1,6 @@
 {
   "name": "npme-auth-p3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Authenticaation for Planet 3 npm enterprise installation",
   "main": "index.js",
   "scripts": {
