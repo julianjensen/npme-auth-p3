@@ -1,0 +1,11 @@
+{
+  "name": "npme-auth-p3",
+  "version": "1.0.0",
+  "description": "Authenticaation for Planet 3 npm enterprise installation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julian Jensen <julian@steamengine.com>",
+  "license": "ISC"
+}
